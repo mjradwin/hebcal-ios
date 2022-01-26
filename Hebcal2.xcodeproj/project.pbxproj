@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D196F9D27A1C17200D90EEC /* Hebcal2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196F9C27A1C17200D90EEC /* Hebcal2App.swift */; };
+		9D196F9F27A1C17200D90EEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196F9E27A1C17200D90EEC /* ContentView.swift */; };
+		9D196FA127A1C17200D90EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D196FA027A1C17200D90EEC /* Assets.xcassets */; };
+		9D196FA427A1C17200D90EEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D196FA327A1C17200D90EEC /* Preview Assets.xcassets */; };
+		9D196FA827A1C17200D90EEC /* Hebcal2 WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9D196FA727A1C17200D90EEC /* Hebcal2 WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D196FAD27A1C17300D90EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D196FAC27A1C17300D90EEC /* Assets.xcassets */; };
+		9D196FB327A1C17300D90EEC /* Hebcal2 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D196FB227A1C17300D90EEC /* Hebcal2 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D196FB827A1C17300D90EEC /* Hebcal2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FB727A1C17300D90EEC /* Hebcal2App.swift */; };
+		9D196FBA27A1C17300D90EEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FB927A1C17300D90EEC /* ContentView.swift */; };
+		9D196FBC27A1C17300D90EEC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FBB27A1C17300D90EEC /* NotificationController.swift */; };
+		9D196FBE27A1C17300D90EEC /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FBD27A1C17300D90EEC /* NotificationView.swift */; };
+		9D196FC027A1C17300D90EEC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FBF27A1C17300D90EEC /* ComplicationController.swift */; };
+		9D196FC227A1C17400D90EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D196FC127A1C17400D90EEC /* Assets.xcassets */; };
+		9D196FC527A1C17400D90EEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D196FC427A1C17400D90EEC /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D196FA927A1C17200D90EEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D196F9127A1C17200D90EEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D196FA627A1C17200D90EEC;
+			remoteInfo = "Hebcal2 WatchKit App";
+		};
+		9D196FB427A1C17300D90EEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D196F9127A1C17200D90EEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D196FB127A1C17300D90EEC;
+			remoteInfo = "Hebcal2 WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D196FCD27A1C17400D90EEC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9D196FB327A1C17300D90EEC /* Hebcal2 WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D196FD127A1C17400D90EEC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9D196FA827A1C17200D90EEC /* Hebcal2 WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9D196F9927A1C17200D90EEC /* Hebcal2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hebcal2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D196F9C27A1C17200D90EEC /* Hebcal2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hebcal2App.swift; sourceTree = "<group>"; };
+		9D196F9E27A1C17200D90EEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D196FA027A1C17200D90EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D196FA327A1C17200D90EEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D196FA727A1C17200D90EEC /* Hebcal2 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hebcal2 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D196FAC27A1C17300D90EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D196FB227A1C17300D90EEC /* Hebcal2 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Hebcal2 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D196FB727A1C17300D90EEC /* Hebcal2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hebcal2App.swift; sourceTree = "<group>"; };
+		9D196FB927A1C17300D90EEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D196FBB27A1C17300D90EEC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		9D196FBD27A1C17300D90EEC /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		9D196FBF27A1C17300D90EEC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		9D196FC127A1C17400D90EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D196FC427A1C17400D90EEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D196FC627A1C17400D90EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D196FC727A1C17400D90EEC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D196F9627A1C17200D90EEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D196FAF27A1C17300D90EEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D196F9027A1C17200D90EEC = {
+			isa = PBXGroup;
+			children = (
+				9D196F9B27A1C17200D90EEC /* Hebcal2 */,
+				9D196FAB27A1C17200D90EEC /* Hebcal2 WatchKit App */,
+				9D196FB627A1C17300D90EEC /* Hebcal2 WatchKit Extension */,
+				9D196F9A27A1C17200D90EEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D196F9A27A1C17200D90EEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D196F9927A1C17200D90EEC /* Hebcal2.app */,
+				9D196FA727A1C17200D90EEC /* Hebcal2 WatchKit App.app */,
+				9D196FB227A1C17300D90EEC /* Hebcal2 WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D196F9B27A1C17200D90EEC /* Hebcal2 */ = {
+			isa = PBXGroup;
+			children = (
+				9D196F9C27A1C17200D90EEC /* Hebcal2App.swift */,
+				9D196F9E27A1C17200D90EEC /* ContentView.swift */,
+				9D196FA027A1C17200D90EEC /* Assets.xcassets */,
+				9D196FA227A1C17200D90EEC /* Preview Content */,
+			);
+			path = Hebcal2;
+			sourceTree = "<group>";
+		};
+		9D196FA227A1C17200D90EEC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9D196FA327A1C17200D90EEC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9D196FAB27A1C17200D90EEC /* Hebcal2 WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				9D196FAC27A1C17300D90EEC /* Assets.xcassets */,
+			);
+			path = "Hebcal2 WatchKit App";
+			sourceTree = "<group>";
+		};
+		9D196FB627A1C17300D90EEC /* Hebcal2 WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9D196FB727A1C17300D90EEC /* Hebcal2App.swift */,
+				9D196FB927A1C17300D90EEC /* ContentView.swift */,
+				9D196FBB27A1C17300D90EEC /* NotificationController.swift */,
+				9D196FBD27A1C17300D90EEC /* NotificationView.swift */,
+				9D196FBF27A1C17300D90EEC /* ComplicationController.swift */,
+				9D196FC127A1C17400D90EEC /* Assets.xcassets */,
+				9D196FC627A1C17400D90EEC /* Info.plist */,
+				9D196FC727A1C17400D90EEC /* PushNotificationPayload.apns */,
+				9D196FC327A1C17400D90EEC /* Preview Content */,
+			);
+			path = "Hebcal2 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		9D196FC327A1C17400D90EEC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9D196FC427A1C17400D90EEC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D196F9827A1C17200D90EEC /* Hebcal2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D196FD227A1C17400D90EEC /* Build configuration list for PBXNativeTarget "Hebcal2" */;
+			buildPhases = (
+				9D196F9527A1C17200D90EEC /* Sources */,
+				9D196F9627A1C17200D90EEC /* Frameworks */,
+				9D196F9727A1C17200D90EEC /* Resources */,
+				9D196FD127A1C17400D90EEC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D196FAA27A1C17200D90EEC /* PBXTargetDependency */,
+			);
+			name = Hebcal2;
+			productName = Hebcal2;
+			productReference = 9D196F9927A1C17200D90EEC /* Hebcal2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D196FA627A1C17200D90EEC /* Hebcal2 WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D196FCE27A1C17400D90EEC /* Build configuration list for PBXNativeTarget "Hebcal2 WatchKit App" */;
+			buildPhases = (
+				9D196FA527A1C17200D90EEC /* Resources */,
+				9D196FCD27A1C17400D90EEC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D196FB527A1C17300D90EEC /* PBXTargetDependency */,
+			);
+			name = "Hebcal2 WatchKit App";
+			productName = "Hebcal2 WatchKit App";
+			productReference = 9D196FA727A1C17200D90EEC /* Hebcal2 WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9D196FB127A1C17300D90EEC /* Hebcal2 WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D196FCA27A1C17400D90EEC /* Build configuration list for PBXNativeTarget "Hebcal2 WatchKit Extension" */;
+			buildPhases = (
+				9D196FAE27A1C17300D90EEC /* Sources */,
+				9D196FAF27A1C17300D90EEC /* Frameworks */,
+				9D196FB027A1C17300D90EEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hebcal2 WatchKit Extension";
+			productName = "Hebcal2 WatchKit Extension";
+			productReference = 9D196FB227A1C17300D90EEC /* Hebcal2 WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D196F9127A1C17200D90EEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					9D196F9827A1C17200D90EEC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					9D196FA627A1C17200D90EEC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					9D196FB127A1C17300D90EEC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9D196F9427A1C17200D90EEC /* Build configuration list for PBXProject "Hebcal2" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D196F9027A1C17200D90EEC;
+			productRefGroup = 9D196F9A27A1C17200D90EEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D196F9827A1C17200D90EEC /* Hebcal2 */,
+				9D196FA627A1C17200D90EEC /* Hebcal2 WatchKit App */,
+				9D196FB127A1C17300D90EEC /* Hebcal2 WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D196F9727A1C17200D90EEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D196FA427A1C17200D90EEC /* Preview Assets.xcassets in Resources */,
+				9D196FA127A1C17200D90EEC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D196FA527A1C17200D90EEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D196FAD27A1C17300D90EEC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D196FB027A1C17300D90EEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D196FC527A1C17400D90EEC /* Preview Assets.xcassets in Resources */,
+				9D196FC227A1C17400D90EEC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D196F9527A1C17200D90EEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D196F9F27A1C17200D90EEC /* ContentView.swift in Sources */,
+				9D196F9D27A1C17200D90EEC /* Hebcal2App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D196FAE27A1C17300D90EEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D196FBC27A1C17300D90EEC /* NotificationController.swift in Sources */,
+				9D196FBA27A1C17300D90EEC /* ContentView.swift in Sources */,
+				9D196FC027A1C17300D90EEC /* ComplicationController.swift in Sources */,
+				9D196FB827A1C17300D90EEC /* Hebcal2App.swift in Sources */,
+				9D196FBE27A1C17300D90EEC /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D196FAA27A1C17200D90EEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D196FA627A1C17200D90EEC /* Hebcal2 WatchKit App */;
+			targetProxy = 9D196FA927A1C17200D90EEC /* PBXContainerItemProxy */;
+		};
+		9D196FB527A1C17300D90EEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D196FB127A1C17300D90EEC /* Hebcal2 WatchKit Extension */;
+			targetProxy = 9D196FB427A1C17300D90EEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9D196FC827A1C17400D90EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D196FC927A1C17400D90EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9D196FCB27A1C17400D90EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hebcal2 WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hebcal2 WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Hebcal2 WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.Hebcal2.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		9D196FCC27A1C17400D90EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hebcal2 WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hebcal2 WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Hebcal2 WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.Hebcal2.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		9D196FCF27A1C17400D90EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Hebcal2_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hebcal2 WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.hebcal.Hebcal2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.Hebcal2.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		9D196FD027A1C17400D90EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Hebcal2_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hebcal2 WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.hebcal.Hebcal2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.Hebcal2.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		9D196FD327A1C17400D90EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hebcal2/Preview Content\"";
+				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.Hebcal2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D196FD427A1C17400D90EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hebcal2/Preview Content\"";
+				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.Hebcal2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D196F9427A1C17200D90EEC /* Build configuration list for PBXProject "Hebcal2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D196FC827A1C17400D90EEC /* Debug */,
+				9D196FC927A1C17400D90EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D196FCA27A1C17400D90EEC /* Build configuration list for PBXNativeTarget "Hebcal2 WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D196FCB27A1C17400D90EEC /* Debug */,
+				9D196FCC27A1C17400D90EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D196FCE27A1C17400D90EEC /* Build configuration list for PBXNativeTarget "Hebcal2 WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D196FCF27A1C17400D90EEC /* Debug */,
+				9D196FD027A1C17400D90EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D196FD227A1C17400D90EEC /* Build configuration list for PBXNativeTarget "Hebcal2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D196FD327A1C17400D90EEC /* Debug */,
+				9D196FD427A1C17400D90EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D196F9127A1C17200D90EEC /* Project object */;
+}
