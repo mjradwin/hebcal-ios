@@ -28,11 +28,11 @@ struct TodayView: View {
             }
             VStack(alignment: isHebrew ? .trailing : .leading, spacing:0) {
                 Text(gregDate)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.secondary)
                     .scaledFont(size: 16, weight: .regular, design: .default)
                     .lineLimit(1)
                 Text(item.hdate)
-                    .foregroundColor(.white)
+                    .foregroundColor(.primary)
                     .scaledFont(size: 18, weight: .regular, design: .default)
                     .lineLimit(1)
                 ForEach(item.holidays, id: \.self) { holiday in
@@ -43,7 +43,7 @@ struct TodayView: View {
                 }
                 item.omer.map({
                     Text($0)
-                        .foregroundColor(.gray)
+                        .foregroundColor(.secondary)
                         .scaledFont(size: 16, weight: .regular, design: .default)
                         .lineLimit(1)
                 })

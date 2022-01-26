@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Hebcal2App: App {
+    @StateObject var settings = ModelData.shared
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(settings)
         }
     }
 }
