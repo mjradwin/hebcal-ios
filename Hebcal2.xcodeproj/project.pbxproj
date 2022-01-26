@@ -36,6 +36,7 @@
 		9D196FEF27A1CBDC00D90EEC /* HDateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FEA27A1CB6100D90EEC /* HDateList.swift */; };
 		9D196FF127A1CC1900D90EEC /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FF027A1CC1900D90EEC /* ScaledFont.swift */; };
 		9D196FF227A1CC1900D90EEC /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FF027A1CC1900D90EEC /* ScaledFont.swift */; };
+		9D1AF10527A1E01900D3CBA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196F9E27A1C17200D90EEC /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,7 +105,7 @@
 		9D196FE127A1CAC200D90EEC /* HDateTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDateTextView.swift; sourceTree = "<group>"; };
 		9D196FE627A1CB2400D90EEC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		9D196FE827A1CB4400D90EEC /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
-		9D196FEA27A1CB6100D90EEC /* HDateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HDateList.swift; path = Hebcal2/HDateList.swift; sourceTree = SOURCE_ROOT; };
+		9D196FEA27A1CB6100D90EEC /* HDateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HDateList.swift; path = Hebcal2/Views/HDateList.swift; sourceTree = SOURCE_ROOT; };
 		9D196FF027A1CC1900D90EEC /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,12 +153,9 @@
 		9D196F9B27A1C17200D90EEC /* Hebcal2 */ = {
 			isa = PBXGroup;
 			children = (
-				9D196FEA27A1CB6100D90EEC /* HDateList.swift */,
-				9D196FF027A1CC1900D90EEC /* ScaledFont.swift */,
+				9D1AF10427A1E00F00D3CBA5 /* Views */,
 				9D196FD827A1C9F900D90EEC /* Model */,
 				9D196F9C27A1C17200D90EEC /* Hebcal2App.swift */,
-				9D196F9E27A1C17200D90EEC /* ContentView.swift */,
-				9D196FE827A1CB4400D90EEC /* TodayView.swift */,
 				9D196FA027A1C17200D90EEC /* Assets.xcassets */,
 				9D196FA227A1C17200D90EEC /* Preview Content */,
 			);
@@ -221,6 +219,17 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D1AF10427A1E00F00D3CBA5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D196FF027A1CC1900D90EEC /* ScaledFont.swift */,
+				9D196F9E27A1C17200D90EEC /* ContentView.swift */,
+				9D196FEA27A1CB6100D90EEC /* HDateList.swift */,
+				9D196FE827A1CB4400D90EEC /* TodayView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +388,7 @@
 			files = (
 				9D196FE727A1CB2400D90EEC /* ExtensionDelegate.swift in Sources */,
 				9D196FBC27A1C17300D90EEC /* NotificationController.swift in Sources */,
+				9D1AF10527A1E01900D3CBA5 /* ContentView.swift in Sources */,
 				9D196FE027A1CAA900D90EEC /* SettingsView.swift in Sources */,
 				9D196FBA27A1C17300D90EEC /* ContentView.swift in Sources */,
 				9D196FEF27A1CBDC00D90EEC /* HDateList.swift in Sources */,
