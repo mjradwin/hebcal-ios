@@ -27,7 +27,7 @@ final class ModelData: ObservableObject {
                 sedraCache = [:]
                 currentDay = -1
                 updateDateItems()
-                reloadComplications()
+                // reloadComplications()
             }
         }
     }
@@ -39,7 +39,7 @@ final class ModelData: ObservableObject {
                 UserDefaults.standard.set(lang, forKey: "lang")
                 currentDay = -1
                 updateDateItems()
-                reloadComplications()
+                // reloadComplications()
             }
         }
     }
