@@ -599,7 +599,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Hebcal2_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.hebcal.Hebcal2;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.hebcal.HebcalHDate;
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.HebcalHDate.watchkitapp;
 				PRODUCT_NAME = Hebcal2;
@@ -624,7 +624,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Hebcal2_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.hebcal.Hebcal2;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.hebcal.HebcalHDate;
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.HebcalHDate.watchkitapp;
 				PRODUCT_NAME = Hebcal2;

@@ -27,7 +27,6 @@ final class ModelData: ObservableObject {
                 sedraCache = [:]
                 currentDay = -1
                 updateDateItems()
-                // reloadComplications()
             }
         }
     }
@@ -39,7 +38,6 @@ final class ModelData: ObservableObject {
                 UserDefaults.standard.set(lang, forKey: "lang")
                 currentDay = -1
                 updateDateItems()
-                // reloadComplications()
             }
         }
     }
@@ -380,7 +378,7 @@ final class ModelData: ObservableObject {
 
     private var currentTimezone: TimeZone = TimeZone.current
 
-    public func didTimezoneChange() -> Bool {
+    @discardableResult public func didTimezoneChange() -> Bool {
         if self.currentTimezone == TimeZone.current {
             return false
         } else {

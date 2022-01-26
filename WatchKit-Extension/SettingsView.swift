@@ -7,10 +7,12 @@
 
 import Foundation
 import SwiftUI
+import os
 import Hebcal
 
 // The app's main view.
 struct SettingsView: View {
+    let logger = Logger(subsystem: "com.hebcal.HebcalHDate.watchkitapp.watchkitextension.SettingsView", category: "Settings")
     @EnvironmentObject var modelData: ModelData
 
     var langDescription: String {
@@ -39,11 +41,17 @@ struct SettingsView: View {
                     Text("Ashkenazi").tag(TranslationLang.ashkenazi.rawValue)
                     Text("Hebrew").tag(TranslationLang.he.rawValue)
                 }
+                .onChange(of: modelData.lang) { tag in
+                    ComplicationController.reloadComplications()
+                }
             })
             Section(header: Text(ilDescription).textCase(.none),
                     content: {
                 Toggle(isOn: $modelData.il) {
                     Text("Israel")
+                }
+                .onChange(of: modelData.il) { tag in
+                    ComplicationController.reloadComplications()
                 }
             })
         }

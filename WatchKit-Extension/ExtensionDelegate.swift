@@ -26,11 +26,12 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             // Handle background refresh tasks.
             case let backgroundTask as WKApplicationRefreshBackgroundTask:
                 let model = ModelData.shared
-                if model.didTimezoneChange() {
+                let reloadComplications = model.didTimezoneChange()
+                model.updateDateItems()
+                if reloadComplications {
                     logger.debug("reloading complications...")
                     ComplicationController.reloadComplications()
                 }
-                model.updateDateItems()
                 // Schedule the next background update.
                 scheduleBackgroundRefreshTasks()
                 // Mark the task as ended, and request an updated snapshot, if necessary.

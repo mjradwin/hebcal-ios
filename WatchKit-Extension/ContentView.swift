@@ -31,6 +31,7 @@ struct ContentView: View {
                 logger.debug("Scene became inactive.")
             case .active:
                 logger.debug("Scene became active.")
+                modelData.didTimezoneChange()
                 modelData.updateDateItems()
             case .background:
                 logger.debug("Scene moved to the background.")
