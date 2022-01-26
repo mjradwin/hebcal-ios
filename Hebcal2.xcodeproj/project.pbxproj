@@ -36,7 +36,6 @@
 		9D196FEF27A1CBDC00D90EEC /* HDateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FEA27A1CB6100D90EEC /* HDateList.swift */; };
 		9D196FF127A1CC1900D90EEC /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FF027A1CC1900D90EEC /* ScaledFont.swift */; };
 		9D196FF227A1CC1900D90EEC /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FF027A1CC1900D90EEC /* ScaledFont.swift */; };
-		9D1AF10527A1E01900D3CBA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196F9E27A1C17200D90EEC /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +155,7 @@
 				9D1AF10427A1E00F00D3CBA5 /* Views */,
 				9D196FD827A1C9F900D90EEC /* Model */,
 				9D196F9C27A1C17200D90EEC /* Hebcal2App.swift */,
+				9D196F9E27A1C17200D90EEC /* ContentView.swift */,
 				9D196FA027A1C17200D90EEC /* Assets.xcassets */,
 				9D196FA227A1C17200D90EEC /* Preview Content */,
 			);
@@ -225,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				9D196FF027A1CC1900D90EEC /* ScaledFont.swift */,
-				9D196F9E27A1C17200D90EEC /* ContentView.swift */,
 				9D196FEA27A1CB6100D90EEC /* HDateList.swift */,
 				9D196FE827A1CB4400D90EEC /* TodayView.swift */,
 			);
@@ -388,7 +387,6 @@
 			files = (
 				9D196FE727A1CB2400D90EEC /* ExtensionDelegate.swift in Sources */,
 				9D196FBC27A1C17300D90EEC /* NotificationController.swift in Sources */,
-				9D1AF10527A1E01900D3CBA5 /* ContentView.swift in Sources */,
 				9D196FE027A1CAA900D90EEC /* SettingsView.swift in Sources */,
 				9D196FBA27A1C17300D90EEC /* ContentView.swift in Sources */,
 				9D196FEF27A1CBDC00D90EEC /* HDateList.swift in Sources */,
