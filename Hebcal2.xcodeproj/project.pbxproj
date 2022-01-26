@@ -11,9 +11,9 @@
 		9D196F9F27A1C17200D90EEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196F9E27A1C17200D90EEC /* ContentView.swift */; };
 		9D196FA127A1C17200D90EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D196FA027A1C17200D90EEC /* Assets.xcassets */; };
 		9D196FA427A1C17200D90EEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D196FA327A1C17200D90EEC /* Preview Assets.xcassets */; };
-		9D196FA827A1C17200D90EEC /* Hebcal2 WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9D196FA727A1C17200D90EEC /* Hebcal2 WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D196FA827A1C17200D90EEC /* Hebcal.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9D196FA727A1C17200D90EEC /* Hebcal.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9D196FAD27A1C17300D90EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D196FAC27A1C17300D90EEC /* Assets.xcassets */; };
-		9D196FB327A1C17300D90EEC /* Hebcal2 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D196FB227A1C17300D90EEC /* Hebcal2 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D196FB327A1C17300D90EEC /* WatchKit-Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D196FB227A1C17300D90EEC /* WatchKit-Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9D196FB827A1C17300D90EEC /* Hebcal2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FB727A1C17300D90EEC /* Hebcal2App.swift */; };
 		9D196FBA27A1C17300D90EEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FB927A1C17300D90EEC /* ContentView.swift */; };
 		9D196FBC27A1C17300D90EEC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FBB27A1C17300D90EEC /* NotificationController.swift */; };
@@ -21,6 +21,21 @@
 		9D196FC027A1C17300D90EEC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FBF27A1C17300D90EEC /* ComplicationController.swift */; };
 		9D196FC227A1C17400D90EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D196FC127A1C17400D90EEC /* Assets.xcassets */; };
 		9D196FC527A1C17400D90EEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D196FC427A1C17400D90EEC /* Preview Assets.xcassets */; };
+		9D196FD727A1C18B00D90EEC /* Hebcal in Frameworks */ = {isa = PBXBuildFile; productRef = 9D196FD627A1C18B00D90EEC /* Hebcal */; };
+		9D196FDA27A1CA0700D90EEC /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FD927A1CA0700D90EEC /* ModelData.swift */; };
+		9D196FDC27A1CA1900D90EEC /* DateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FDB27A1CA1900D90EEC /* DateItem.swift */; };
+		9D196FDD27A1CA1900D90EEC /* DateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FDB27A1CA1900D90EEC /* DateItem.swift */; };
+		9D196FDE27A1CA3B00D90EEC /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FD927A1CA0700D90EEC /* ModelData.swift */; };
+		9D196FE027A1CAA900D90EEC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FDF27A1CAA900D90EEC /* SettingsView.swift */; };
+		9D196FE227A1CAC200D90EEC /* HDateTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FE127A1CAC200D90EEC /* HDateTextView.swift */; };
+		9D196FE527A1CB0800D90EEC /* Hebcal in Frameworks */ = {isa = PBXBuildFile; productRef = 9D196FE427A1CB0800D90EEC /* Hebcal */; };
+		9D196FE727A1CB2400D90EEC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FE627A1CB2400D90EEC /* ExtensionDelegate.swift */; };
+		9D196FEB27A1CB6100D90EEC /* HDateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FEA27A1CB6100D90EEC /* HDateList.swift */; };
+		9D196FED27A1CBCE00D90EEC /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FE827A1CB4400D90EEC /* TodayView.swift */; };
+		9D196FEE27A1CBD400D90EEC /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FE827A1CB4400D90EEC /* TodayView.swift */; };
+		9D196FEF27A1CBDC00D90EEC /* HDateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FEA27A1CB6100D90EEC /* HDateList.swift */; };
+		9D196FF127A1CC1900D90EEC /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FF027A1CC1900D90EEC /* ScaledFont.swift */; };
+		9D196FF227A1CC1900D90EEC /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FF027A1CC1900D90EEC /* ScaledFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,14 +44,14 @@
 			containerPortal = 9D196F9127A1C17200D90EEC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9D196FA627A1C17200D90EEC;
-			remoteInfo = "Hebcal2 WatchKit App";
+			remoteInfo = "WatchKit-App";
 		};
 		9D196FB427A1C17300D90EEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D196F9127A1C17200D90EEC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9D196FB127A1C17300D90EEC;
-			remoteInfo = "Hebcal2 WatchKit Extension";
+			remoteInfo = "WatchKit-Extension";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -47,7 +62,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9D196FB327A1C17300D90EEC /* Hebcal2 WatchKit Extension.appex in Embed App Extensions */,
+				9D196FB327A1C17300D90EEC /* WatchKit-Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +73,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				9D196FA827A1C17200D90EEC /* Hebcal2 WatchKit App.app in Embed Watch Content */,
+				9D196FA827A1C17200D90EEC /* Hebcal.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,14 +81,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9D196F9927A1C17200D90EEC /* Hebcal2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hebcal2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D196F9927A1C17200D90EEC /* Hebcal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hebcal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D196F9C27A1C17200D90EEC /* Hebcal2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hebcal2App.swift; sourceTree = "<group>"; };
 		9D196F9E27A1C17200D90EEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D196FA027A1C17200D90EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D196FA327A1C17200D90EEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9D196FA727A1C17200D90EEC /* Hebcal2 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hebcal2 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D196FA727A1C17200D90EEC /* Hebcal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hebcal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D196FAC27A1C17300D90EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D196FB227A1C17300D90EEC /* Hebcal2 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Hebcal2 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D196FB227A1C17300D90EEC /* WatchKit-Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchKit-Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D196FB727A1C17300D90EEC /* Hebcal2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hebcal2App.swift; sourceTree = "<group>"; };
 		9D196FB927A1C17300D90EEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D196FBB27A1C17300D90EEC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -83,6 +98,14 @@
 		9D196FC427A1C17400D90EEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D196FC627A1C17400D90EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D196FC727A1C17400D90EEC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		9D196FD927A1CA0700D90EEC /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		9D196FDB27A1CA1900D90EEC /* DateItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateItem.swift; sourceTree = "<group>"; };
+		9D196FDF27A1CAA900D90EEC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9D196FE127A1CAC200D90EEC /* HDateTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDateTextView.swift; sourceTree = "<group>"; };
+		9D196FE627A1CB2400D90EEC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9D196FE827A1CB4400D90EEC /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		9D196FEA27A1CB6100D90EEC /* HDateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HDateList.swift; path = Hebcal2/HDateList.swift; sourceTree = SOURCE_ROOT; };
+		9D196FF027A1CC1900D90EEC /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D196FD727A1C18B00D90EEC /* Hebcal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D196FE527A1CB0800D90EEC /* Hebcal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,18 +132,19 @@
 			isa = PBXGroup;
 			children = (
 				9D196F9B27A1C17200D90EEC /* Hebcal2 */,
-				9D196FAB27A1C17200D90EEC /* Hebcal2 WatchKit App */,
-				9D196FB627A1C17300D90EEC /* Hebcal2 WatchKit Extension */,
+				9D196FAB27A1C17200D90EEC /* WatchKit-App */,
+				9D196FB627A1C17300D90EEC /* WatchKit-Extension */,
 				9D196F9A27A1C17200D90EEC /* Products */,
+				9D196FE327A1CB0800D90EEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		9D196F9A27A1C17200D90EEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D196F9927A1C17200D90EEC /* Hebcal2.app */,
-				9D196FA727A1C17200D90EEC /* Hebcal2 WatchKit App.app */,
-				9D196FB227A1C17300D90EEC /* Hebcal2 WatchKit Extension.appex */,
+				9D196F9927A1C17200D90EEC /* Hebcal.app */,
+				9D196FA727A1C17200D90EEC /* Hebcal.app */,
+				9D196FB227A1C17300D90EEC /* WatchKit-Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,8 +152,12 @@
 		9D196F9B27A1C17200D90EEC /* Hebcal2 */ = {
 			isa = PBXGroup;
 			children = (
+				9D196FEA27A1CB6100D90EEC /* HDateList.swift */,
+				9D196FF027A1CC1900D90EEC /* ScaledFont.swift */,
+				9D196FD827A1C9F900D90EEC /* Model */,
 				9D196F9C27A1C17200D90EEC /* Hebcal2App.swift */,
 				9D196F9E27A1C17200D90EEC /* ContentView.swift */,
+				9D196FE827A1CB4400D90EEC /* TodayView.swift */,
 				9D196FA027A1C17200D90EEC /* Assets.xcassets */,
 				9D196FA227A1C17200D90EEC /* Preview Content */,
 			);
@@ -142,15 +172,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		9D196FAB27A1C17200D90EEC /* Hebcal2 WatchKit App */ = {
+		9D196FAB27A1C17200D90EEC /* WatchKit-App */ = {
 			isa = PBXGroup;
 			children = (
 				9D196FAC27A1C17300D90EEC /* Assets.xcassets */,
 			);
-			path = "Hebcal2 WatchKit App";
+			path = "WatchKit-App";
 			sourceTree = "<group>";
 		};
-		9D196FB627A1C17300D90EEC /* Hebcal2 WatchKit Extension */ = {
+		9D196FB627A1C17300D90EEC /* WatchKit-Extension */ = {
 			isa = PBXGroup;
 			children = (
 				9D196FB727A1C17300D90EEC /* Hebcal2App.swift */,
@@ -162,8 +192,11 @@
 				9D196FC627A1C17400D90EEC /* Info.plist */,
 				9D196FC727A1C17400D90EEC /* PushNotificationPayload.apns */,
 				9D196FC327A1C17400D90EEC /* Preview Content */,
+				9D196FDF27A1CAA900D90EEC /* SettingsView.swift */,
+				9D196FE127A1CAC200D90EEC /* HDateTextView.swift */,
+				9D196FE627A1CB2400D90EEC /* ExtensionDelegate.swift */,
 			);
-			path = "Hebcal2 WatchKit Extension";
+			path = "WatchKit-Extension";
 			sourceTree = "<group>";
 		};
 		9D196FC327A1C17400D90EEC /* Preview Content */ = {
@@ -172,6 +205,22 @@
 				9D196FC427A1C17400D90EEC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9D196FD827A1C9F900D90EEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D196FD927A1CA0700D90EEC /* ModelData.swift */,
+				9D196FDB27A1CA1900D90EEC /* DateItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D196FE327A1CB0800D90EEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,13 +241,16 @@
 				9D196FAA27A1C17200D90EEC /* PBXTargetDependency */,
 			);
 			name = Hebcal2;
+			packageProductDependencies = (
+				9D196FD627A1C18B00D90EEC /* Hebcal */,
+			);
 			productName = Hebcal2;
-			productReference = 9D196F9927A1C17200D90EEC /* Hebcal2.app */;
+			productReference = 9D196F9927A1C17200D90EEC /* Hebcal.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9D196FA627A1C17200D90EEC /* Hebcal2 WatchKit App */ = {
+		9D196FA627A1C17200D90EEC /* WatchKit-App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D196FCE27A1C17400D90EEC /* Build configuration list for PBXNativeTarget "Hebcal2 WatchKit App" */;
+			buildConfigurationList = 9D196FCE27A1C17400D90EEC /* Build configuration list for PBXNativeTarget "WatchKit-App" */;
 			buildPhases = (
 				9D196FA527A1C17200D90EEC /* Resources */,
 				9D196FCD27A1C17400D90EEC /* Embed App Extensions */,
@@ -208,14 +260,14 @@
 			dependencies = (
 				9D196FB527A1C17300D90EEC /* PBXTargetDependency */,
 			);
-			name = "Hebcal2 WatchKit App";
-			productName = "Hebcal2 WatchKit App";
-			productReference = 9D196FA727A1C17200D90EEC /* Hebcal2 WatchKit App.app */;
+			name = "WatchKit-App";
+			productName = "WatchKit-App";
+			productReference = 9D196FA727A1C17200D90EEC /* Hebcal.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		9D196FB127A1C17300D90EEC /* Hebcal2 WatchKit Extension */ = {
+		9D196FB127A1C17300D90EEC /* WatchKit-Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D196FCA27A1C17400D90EEC /* Build configuration list for PBXNativeTarget "Hebcal2 WatchKit Extension" */;
+			buildConfigurationList = 9D196FCA27A1C17400D90EEC /* Build configuration list for PBXNativeTarget "WatchKit-Extension" */;
 			buildPhases = (
 				9D196FAE27A1C17300D90EEC /* Sources */,
 				9D196FAF27A1C17300D90EEC /* Frameworks */,
@@ -225,9 +277,12 @@
 			);
 			dependencies = (
 			);
-			name = "Hebcal2 WatchKit Extension";
-			productName = "Hebcal2 WatchKit Extension";
-			productReference = 9D196FB227A1C17300D90EEC /* Hebcal2 WatchKit Extension.appex */;
+			name = "WatchKit-Extension";
+			packageProductDependencies = (
+				9D196FE427A1CB0800D90EEC /* Hebcal */,
+			);
+			productName = "WatchKit-Extension";
+			productReference = 9D196FB227A1C17300D90EEC /* WatchKit-Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -260,13 +315,16 @@
 				Base,
 			);
 			mainGroup = 9D196F9027A1C17200D90EEC;
+			packageReferences = (
+				9D196FD527A1C18A00D90EEC /* XCRemoteSwiftPackageReference "hebcal-swift" */,
+			);
 			productRefGroup = 9D196F9A27A1C17200D90EEC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9D196F9827A1C17200D90EEC /* Hebcal2 */,
-				9D196FA627A1C17200D90EEC /* Hebcal2 WatchKit App */,
-				9D196FB127A1C17300D90EEC /* Hebcal2 WatchKit Extension */,
+				9D196FA627A1C17200D90EEC /* WatchKit-App */,
+				9D196FB127A1C17300D90EEC /* WatchKit-Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -307,6 +365,11 @@
 			files = (
 				9D196F9F27A1C17200D90EEC /* ContentView.swift in Sources */,
 				9D196F9D27A1C17200D90EEC /* Hebcal2App.swift in Sources */,
+				9D196FDC27A1CA1900D90EEC /* DateItem.swift in Sources */,
+				9D196FDA27A1CA0700D90EEC /* ModelData.swift in Sources */,
+				9D196FED27A1CBCE00D90EEC /* TodayView.swift in Sources */,
+				9D196FEB27A1CB6100D90EEC /* HDateList.swift in Sources */,
+				9D196FF127A1CC1900D90EEC /* ScaledFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,11 +377,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D196FE727A1CB2400D90EEC /* ExtensionDelegate.swift in Sources */,
 				9D196FBC27A1C17300D90EEC /* NotificationController.swift in Sources */,
+				9D196FE027A1CAA900D90EEC /* SettingsView.swift in Sources */,
 				9D196FBA27A1C17300D90EEC /* ContentView.swift in Sources */,
+				9D196FEF27A1CBDC00D90EEC /* HDateList.swift in Sources */,
+				9D196FEE27A1CBD400D90EEC /* TodayView.swift in Sources */,
+				9D196FE227A1CAC200D90EEC /* HDateTextView.swift in Sources */,
 				9D196FC027A1C17300D90EEC /* ComplicationController.swift in Sources */,
 				9D196FB827A1C17300D90EEC /* Hebcal2App.swift in Sources */,
+				9D196FDD27A1CA1900D90EEC /* DateItem.swift in Sources */,
 				9D196FBE27A1C17300D90EEC /* NotificationView.swift in Sources */,
+				9D196FDE27A1CA3B00D90EEC /* ModelData.swift in Sources */,
+				9D196FF227A1CC1900D90EEC /* ScaledFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,12 +398,12 @@
 /* Begin PBXTargetDependency section */
 		9D196FAA27A1C17200D90EEC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D196FA627A1C17200D90EEC /* Hebcal2 WatchKit App */;
+			target = 9D196FA627A1C17200D90EEC /* WatchKit-App */;
 			targetProxy = 9D196FA927A1C17200D90EEC /* PBXContainerItemProxy */;
 		};
 		9D196FB527A1C17300D90EEC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D196FB127A1C17300D90EEC /* Hebcal2 WatchKit Extension */;
+			target = 9D196FB127A1C17300D90EEC /* WatchKit-Extension */;
 			targetProxy = 9D196FB427A1C17300D90EEC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -455,13 +526,13 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Hebcal2 WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WatchKit-Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Hebcal2 WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Hebcal2 WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_FILE = "WatchKit-Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Hebcal;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -469,15 +540,15 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.Hebcal2.watchkitapp.watchkitextension;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.HebcalHDate.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Debug;
 		};
@@ -487,13 +558,13 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Hebcal2 WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WatchKit-Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Hebcal2 WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Hebcal2 WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_FILE = "WatchKit-Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Hebcal;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,8 +572,8 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.Hebcal2.watchkitapp.watchkitextension;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.HebcalHDate.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -510,7 +581,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Release;
 		};
@@ -525,18 +596,17 @@
 				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Hebcal2_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "Hebcal2 WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.hebcal.Hebcal2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.Hebcal2.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.HebcalHDate.watchkitapp;
+				PRODUCT_NAME = Hebcal;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Debug;
 		};
@@ -551,19 +621,18 @@
 				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Hebcal2_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "Hebcal2 WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.hebcal.Hebcal2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.Hebcal2.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.HebcalHDate.watchkitapp;
+				PRODUCT_NAME = Hebcal;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Release;
 		};
@@ -583,14 +652,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.Hebcal2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.HebcalHDate;
+				PRODUCT_NAME = Hebcal;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -614,14 +683,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.Hebcal2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.HebcalHDate;
+				PRODUCT_NAME = Hebcal;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -642,7 +711,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D196FCA27A1C17400D90EEC /* Build configuration list for PBXNativeTarget "Hebcal2 WatchKit Extension" */ = {
+		9D196FCA27A1C17400D90EEC /* Build configuration list for PBXNativeTarget "WatchKit-Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D196FCB27A1C17400D90EEC /* Debug */,
@@ -651,7 +720,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D196FCE27A1C17400D90EEC /* Build configuration list for PBXNativeTarget "Hebcal2 WatchKit App" */ = {
+		9D196FCE27A1C17400D90EEC /* Build configuration list for PBXNativeTarget "WatchKit-App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D196FCF27A1C17400D90EEC /* Debug */,
@@ -670,6 +739,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D196FD527A1C18A00D90EEC /* XCRemoteSwiftPackageReference "hebcal-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hebcal/hebcal-swift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D196FD627A1C18B00D90EEC /* Hebcal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D196FD527A1C18A00D90EEC /* XCRemoteSwiftPackageReference "hebcal-swift" */;
+			productName = Hebcal;
+		};
+		9D196FE427A1CB0800D90EEC /* Hebcal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D196FD527A1C18A00D90EEC /* XCRemoteSwiftPackageReference "hebcal-swift" */;
+			productName = Hebcal;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D196F9127A1C17200D90EEC /* Project object */;
 }
