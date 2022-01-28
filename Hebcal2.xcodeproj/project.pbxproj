@@ -36,6 +36,7 @@
 		9D196FEF27A1CBDC00D90EEC /* HDateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FEA27A1CB6100D90EEC /* HDateList.swift */; };
 		9D196FF127A1CC1900D90EEC /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FF027A1CC1900D90EEC /* ScaledFont.swift */; };
 		9D196FF227A1CC1900D90EEC /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FF027A1CC1900D90EEC /* ScaledFont.swift */; };
+		9D3D252627A4710D0082DD36 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D989BB727A46D460064B9DB /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -348,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D196FA427A1C17200D90EEC /* Preview Assets.xcassets in Resources */,
+				9D3D252627A4710D0082DD36 /* Settings.bundle in Resources */,
 				9D196FA127A1C17200D90EEC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +376,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		9D3D252527A46FAA0082DD36 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
