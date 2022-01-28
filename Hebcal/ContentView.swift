@@ -14,7 +14,16 @@ struct ContentView: View {
     @EnvironmentObject var modelData: ModelData
 
     var body: some View {
-        HDateList()
+        VStack {
+            HStack {
+                Image("luach-and-hebcal")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 48, height: 48)
+                Text("Hebcal Companion")
+            }
+            HDateList()
+        }
     }
 }
 
