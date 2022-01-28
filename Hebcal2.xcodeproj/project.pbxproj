@@ -107,6 +107,7 @@
 		9D196FEA27A1CB6100D90EEC /* HDateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDateList.swift; sourceTree = "<group>"; };
 		9D196FF027A1CC1900D90EEC /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 		9D989BB627A467890064B9DB /* Hebcal-Companion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hebcal-Companion-Info.plist"; sourceTree = "<group>"; };
+		9D989BB727A46D460064B9DB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Hebcal/Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +133,7 @@
 		9D196F9027A1C17200D90EEC = {
 			isa = PBXGroup;
 			children = (
+				9D989BB727A46D460064B9DB /* Settings.bundle */,
 				9D989BB627A467890064B9DB /* Hebcal-Companion-Info.plist */,
 				9D196F9B27A1C17200D90EEC /* Hebcal */,
 				9D196FAB27A1C17200D90EEC /* WatchApp */,
@@ -243,6 +245,7 @@
 				9D196F9527A1C17200D90EEC /* Sources */,
 				9D196F9627A1C17200D90EEC /* Frameworks */,
 				9D196F9727A1C17200D90EEC /* Resources */,
+				9D3D252527A46FAA0082DD36 /* Run Script */,
 				9D196FD127A1C17400D90EEC /* Embed Watch Content */,
 			);
 			buildRules = (
@@ -367,6 +370,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D3D252527A46FAA0082DD36 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd \"${BUILT_PRODUCTS_DIR}\"\nbuildVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${INFOPLIST_PATH}\" )\n/usr/libexec/PlistBuddy -c \"Set PreferenceSpecifiers:1:DefaultValue $buildVersion\" \"${WRAPPER_NAME}/Settings.bundle/Root.plist\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D196F9527A1C17200D90EEC /* Sources */ = {
