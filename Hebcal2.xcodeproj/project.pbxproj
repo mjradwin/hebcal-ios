@@ -44,14 +44,14 @@
 			containerPortal = 9D196F9127A1C17200D90EEC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9D196FA627A1C17200D90EEC;
-			remoteInfo = "WatchApp";
+			remoteInfo = WatchApp;
 		};
 		9D196FB427A1C17300D90EEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D196F9127A1C17200D90EEC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9D196FB127A1C17300D90EEC;
-			remoteInfo = "WatchExtension";
+			remoteInfo = WatchExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -106,6 +106,7 @@
 		9D196FE827A1CB4400D90EEC /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		9D196FEA27A1CB6100D90EEC /* HDateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDateList.swift; sourceTree = "<group>"; };
 		9D196FF027A1CC1900D90EEC /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
+		9D989BB627A467890064B9DB /* Hebcal-Companion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hebcal-Companion-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +132,7 @@
 		9D196F9027A1C17200D90EEC = {
 			isa = PBXGroup;
 			children = (
+				9D989BB627A467890064B9DB /* Hebcal-Companion-Info.plist */,
 				9D196F9B27A1C17200D90EEC /* Hebcal */,
 				9D196FAB27A1C17200D90EEC /* WatchApp */,
 				9D196FB627A1C17300D90EEC /* WatchExtension */,
@@ -269,7 +271,7 @@
 				9D196FB527A1C17300D90EEC /* PBXTargetDependency */,
 			);
 			name = WatchApp;
-			productName = "WatchApp";
+			productName = WatchApp;
 			productReference = 9D196FA727A1C17200D90EEC /* Hebcal.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
@@ -289,7 +291,7 @@
 			packageProductDependencies = (
 				9D196FE427A1CB0800D90EEC /* Hebcal */,
 			);
-			productName = "WatchExtension";
+			productName = WatchExtension;
 			productReference = 9D196FB227A1C17300D90EEC /* WatchExtension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
@@ -657,9 +659,9 @@
 				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hebcal-Companion-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -688,9 +690,9 @@
 				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hebcal-Companion-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
