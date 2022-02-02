@@ -14,15 +14,16 @@ struct ContentView: View {
     @EnvironmentObject var modelData: ModelData
 
     var body: some View {
-        VStack {
-            HStack {
-                Image("luach-and-hebcal")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 48, height: 48)
-                Text("Hebcal Companion")
+        NavigationView {
+            TabView {
+                HDateList()
+                    .tabItem { Label("Calendar", systemImage: "calendar") }
+                ZmanimView()
+                    .tabItem { Label("Times", systemImage: "clock") }
+                SettingsView()
+                    .tabItem { Label("Settings", systemImage: "gear") }
             }
-            HDateList()
+            .navigationTitle("Hebcal")
         }
     }
 }
