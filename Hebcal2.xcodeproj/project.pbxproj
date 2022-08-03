@@ -40,9 +40,10 @@
 		9D3D252827A5A5F80082DD36 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D252727A5A5F80082DD36 /* SettingsView.swift */; };
 		9D3D252A27A5A6100082DD36 /* ZmanimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D252927A5A6100082DD36 /* ZmanimView.swift */; };
 		9D54F61027A8954600963AF7 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 9D54F60F27A8954600963AF7 /* SwiftProtobuf */; };
-		9D54F61227A8998700963AF7 /* DownloadPB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54F61127A8998700963AF7 /* DownloadPB.swift */; };
 		9D54F61527A89DF400963AF7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54F61427A89DF400963AF7 /* CalendarView.swift */; };
 		9D54F61627A89DF400963AF7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54F61427A89DF400963AF7 /* CalendarView.swift */; };
+		9DD388082842D2AD0086C7E9 /* CalendarSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD388072842D2AD0086C7E9 /* CalendarSettings.swift */; };
+		9DD3880C2842D8B60086C7E9 /* DownloadPB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3880B2842D8B60086C7E9 /* DownloadPB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +89,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9D196F9927A1C17200D90EEC /* Hebcal Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hebcal Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D196F9927A1C17200D90EEC /* Hebcal2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hebcal2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D196F9C27A1C17200D90EEC /* Hebcal2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hebcal2App.swift; sourceTree = "<group>"; };
 		9D196F9E27A1C17200D90EEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D196FA027A1C17200D90EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,10 +116,11 @@
 		9D196FF027A1CC1900D90EEC /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 		9D3D252727A5A5F80082DD36 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9D3D252927A5A6100082DD36 /* ZmanimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZmanimView.swift; sourceTree = "<group>"; };
-		9D54F61127A8998700963AF7 /* DownloadPB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadPB.swift; sourceTree = "<group>"; };
 		9D54F61427A89DF400963AF7 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		9D989BB627A467890064B9DB /* Hebcal-Companion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hebcal-Companion-Info.plist"; sourceTree = "<group>"; };
 		9D989BB727A46D460064B9DB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Hebcal/Settings.bundle; sourceTree = "<group>"; };
+		9DD388072842D2AD0086C7E9 /* CalendarSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSettings.swift; sourceTree = "<group>"; };
+		9DD3880B2842D8B60086C7E9 /* DownloadPB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadPB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +160,7 @@
 		9D196F9A27A1C17200D90EEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D196F9927A1C17200D90EEC /* Hebcal Companion.app */,
+				9D196F9927A1C17200D90EEC /* Hebcal2.app */,
 				9D196FA727A1C17200D90EEC /* Hebcal.app */,
 				9D196FB227A1C17300D90EEC /* WatchExtension.appex */,
 			);
@@ -173,6 +175,7 @@
 				9D196F9C27A1C17200D90EEC /* Hebcal2App.swift */,
 				9D196F9E27A1C17200D90EEC /* ContentView.swift */,
 				9D3D252727A5A5F80082DD36 /* SettingsView.swift */,
+				9DD388072842D2AD0086C7E9 /* CalendarSettings.swift */,
 				9D3D252927A5A6100082DD36 /* ZmanimView.swift */,
 				9D196FA027A1C17200D90EEC /* Assets.xcassets */,
 				9D196FA227A1C17200D90EEC /* Preview Content */,
@@ -228,7 +231,7 @@
 			children = (
 				9D196FD927A1CA0700D90EEC /* ModelData.swift */,
 				9D196FDB27A1CA1900D90EEC /* DateItem.swift */,
-				9D54F61127A8998700963AF7 /* DownloadPB.swift */,
+				9DD3880B2842D8B60086C7E9 /* DownloadPB.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,9 +257,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9D196F9827A1C17200D90EEC /* Hebcal Companion */ = {
+		9D196F9827A1C17200D90EEC /* Hebcal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D196FD227A1C17400D90EEC /* Build configuration list for PBXNativeTarget "Hebcal Companion" */;
+			buildConfigurationList = 9D196FD227A1C17400D90EEC /* Build configuration list for PBXNativeTarget "Hebcal" */;
 			buildPhases = (
 				9D196F9527A1C17200D90EEC /* Sources */,
 				9D196F9627A1C17200D90EEC /* Frameworks */,
@@ -269,13 +272,13 @@
 			dependencies = (
 				9D196FAA27A1C17200D90EEC /* PBXTargetDependency */,
 			);
-			name = "Hebcal Companion";
+			name = Hebcal;
 			packageProductDependencies = (
 				9D196FD627A1C18B00D90EEC /* Hebcal */,
 				9D54F60F27A8954600963AF7 /* SwiftProtobuf */,
 			);
 			productName = Hebcal2;
-			productReference = 9D196F9927A1C17200D90EEC /* Hebcal Companion.app */;
+			productReference = 9D196F9927A1C17200D90EEC /* Hebcal2.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9D196FA627A1C17200D90EEC /* WatchApp */ = {
@@ -353,7 +356,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D196F9827A1C17200D90EEC /* Hebcal Companion */,
+				9D196F9827A1C17200D90EEC /* Hebcal */,
 				9D196FA627A1C17200D90EEC /* WatchApp */,
 				9D196FB127A1C17300D90EEC /* WatchExtension */,
 			);
@@ -418,15 +421,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D196F9F27A1C17200D90EEC /* ContentView.swift in Sources */,
-				9D54F61227A8998700963AF7 /* DownloadPB.swift in Sources */,
 				9D3D252827A5A5F80082DD36 /* SettingsView.swift in Sources */,
 				9D3D252A27A5A6100082DD36 /* ZmanimView.swift in Sources */,
 				9D196F9D27A1C17200D90EEC /* Hebcal2App.swift in Sources */,
 				9D196FDC27A1CA1900D90EEC /* DateItem.swift in Sources */,
 				9D54F61527A89DF400963AF7 /* CalendarView.swift in Sources */,
 				9D196FDA27A1CA0700D90EEC /* ModelData.swift in Sources */,
+				9DD388082842D2AD0086C7E9 /* CalendarSettings.swift in Sources */,
 				9D196FED27A1CBCE00D90EEC /* TodayView.swift in Sources */,
 				9D196FEB27A1CB6100D90EEC /* HDateList.swift in Sources */,
+				9DD3880C2842D8B60086C7E9 /* DownloadPB.swift in Sources */,
 				9D196FF127A1CC1900D90EEC /* ScaledFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,7 +588,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.1;
+				CURRENT_PROJECT_VERSION = 2.0.2;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchExtension/Preview Content\"";
 				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
 				ENABLE_PREVIEWS = YES;
@@ -600,7 +604,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.HebcalHDate.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -617,7 +621,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.1;
+				CURRENT_PROJECT_VERSION = 2.0.2;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchExtension/Preview Content\"";
 				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
 				ENABLE_PREVIEWS = YES;
@@ -633,7 +637,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.HebcalHDate.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -653,13 +657,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.1;
+				CURRENT_PROJECT_VERSION = 2.0.2;
 				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Hebcal2_WatchExtension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.hebcal.HebcalHDate;
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.HebcalHDate.watchkitapp;
 				PRODUCT_NAME = Hebcal;
 				SDKROOT = watchos;
@@ -678,13 +682,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.1;
+				CURRENT_PROJECT_VERSION = 2.0.2;
 				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Hebcal2_WatchExtension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.hebcal.HebcalHDate;
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.HebcalHDate.watchkitapp;
 				PRODUCT_NAME = Hebcal;
 				SDKROOT = watchos;
@@ -703,12 +707,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.1;
+				CURRENT_PROJECT_VERSION = 2.0.2;
 				DEVELOPMENT_ASSET_PATHS = "\"Hebcal/Preview Content\"";
 				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Hebcal-Companion-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Hebcal;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Hebcal uses your location to calculate candle-lighting times for Sabbat and holidays";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -719,9 +724,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.HebcalHDate;
-				PRODUCT_NAME = "Hebcal Companion";
+				PRODUCT_NAME = Hebcal2;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -735,12 +740,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.1;
+				CURRENT_PROJECT_VERSION = 2.0.2;
 				DEVELOPMENT_ASSET_PATHS = "\"Hebcal/Preview Content\"";
 				DEVELOPMENT_TEAM = 4ZRJ2HBKYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Hebcal-Companion-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Hebcal;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Hebcal uses your location to calculate candle-lighting times for Sabbat and holidays";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -751,9 +757,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hebcal.HebcalHDate;
-				PRODUCT_NAME = "Hebcal Companion";
+				PRODUCT_NAME = Hebcal2;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -792,7 +798,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D196FD227A1C17400D90EEC /* Build configuration list for PBXNativeTarget "Hebcal Companion" */ = {
+		9D196FD227A1C17400D90EEC /* Build configuration list for PBXNativeTarget "Hebcal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D196FD327A1C17400D90EEC /* Debug */,

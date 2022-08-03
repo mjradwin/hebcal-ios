@@ -1,6 +1,6 @@
 //
 //  SettingsView.swift
-//  Hebcal Companion
+//  Hebcal iOS
 //
 //  Created by Michael J. Radwin on 1/29/22.
 //
@@ -33,7 +33,7 @@ struct SettingsView: View {
 
     // Lay out the view's body.
     var body: some View {
-        VStack(spacing: 0) {
+        NavigationView {
             Form {
                 Picker("Language", selection: $modelData.lang) {
                     Text("Sephardic").tag(TranslationLang.en.rawValue)
@@ -41,15 +41,12 @@ struct SettingsView: View {
                     Text("Hebrew").tag(TranslationLang.he.rawValue)
                 }
                 .pickerStyle(.inline)
-            }
-            Text(langDescription)
-            Form {
-                Toggle(isOn: $modelData.il) {
-                    Text("Israel")
+                Section(header: Text("Location")) {
+                    Toggle(isOn: $modelData.il) {
+                        Text("Israel")
+                    }
                 }
             }
-            Text(ilDescription)
-            Spacer()
         }
         .navigationTitle("Settings")
     }
