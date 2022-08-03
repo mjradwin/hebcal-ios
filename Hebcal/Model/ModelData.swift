@@ -47,8 +47,8 @@ final class ModelData: ObservableObject {
     }
 
     public func makeHDate(date: Date) -> HDate {
-        var hdate = HDate(date: date)
         let calendar = Calendar.current
+        var hdate = HDate(date: date, calendar: calendar)
         let hour = calendar.dateComponents([.hour], from: date).hour!
         if (hour > 19) {
             hdate = hdate.next()
@@ -301,7 +301,7 @@ final class ModelData: ObservableObject {
     public func makeDateItem(date: Date, calendar: Calendar, showYear: Bool, forceParsha: Bool) -> DateItem {
         let dateComponents = calendar.dateComponents([.weekday, .month, .day, .year], from: date)
         let weekday = dateComponents.weekday!
-        let hdate = HDate(date: date)
+        let hdate = HDate(date: date, calendar: calendar)
         let showYear0 = (hdate.mm == .TISHREI && hdate.dd == 1) || showYear
         let hdateStr = self.getHebDateString(hdate: hdate, showYear: showYear0)
         let parsha = (forceParsha || weekday == 7) ? parshaStr(hdate: hdate) : nil
@@ -349,7 +349,7 @@ final class ModelData: ObservableObject {
             current = current.addingTimeInterval(twentyFourHours)
         }
         // Then show Shabbat and holidays for the next 4 months
-        let today = HDate(date: date)
+        let today = HDate(date: date, calendar: calendar)
         let numDays = daysInYear(year: today.yy)
         let startAbs = greg2abs(date: current)
         let endAbs = today.abs() + Int64(numDays)
