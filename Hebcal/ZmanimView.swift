@@ -11,15 +11,23 @@ struct ZmanimView: View {
     @EnvironmentObject var modelData: ModelData
     var body: some View {
         VStack {
-            Text("Mishna Yomi")
-            Text(modelData.mishnaYomi.0.k + " " + modelData.mishnaYomi.0.v)
-            Text(modelData.mishnaYomi.1.k + " " + modelData.mishnaYomi.1.v)
-            Spacer()
+            TodayView(item: modelData.todayDateItem!)
+            Text("")
             Text("Daf Yomi")
+                .foregroundColor(.secondary)
+                .scaledFont(size: 14, weight: .regular, design: .default)
             Text(modelData.dafYomi.name + " " + String(modelData.dafYomi.blatt))
-            Spacer()
+                .foregroundColor(.primary)
+                .scaledFont(size: 18, weight: .regular, design: .default)
+            Text("")
+            Text("Mishna Yomi")
+                .foregroundColor(.secondary)
+                .scaledFont(size: 14, weight: .regular, design: .default)
+            Text(modelData.mishnaYomi)
+                .foregroundColor(.primary)
+                .scaledFont(size: 18, weight: .regular, design: .default)
         }
-        .navigationTitle("Times")
+        .navigationTitle("Today")
     }
 }
 

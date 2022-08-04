@@ -19,7 +19,7 @@ struct ContentView: View {
                 HDateList()
                     .tabItem { Label("Calendar", systemImage: "calendar") }
                 ZmanimView()
-                    .tabItem { Label("Times", systemImage: "clock") }
+                    .tabItem { Label("Today", systemImage: "clock") }
                 SettingsView()
                     .tabItem { Label("Settings", systemImage: "gear") }
             }

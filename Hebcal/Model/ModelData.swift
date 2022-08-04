@@ -171,7 +171,7 @@ final class ModelData: ObservableObject {
         self.il = UserDefaults.standard.bool(forKey: "israel")
         self.lang = UserDefaults.standard.integer(forKey: "lang")
         self.dafYomi = Daf(name: "bogus", blatt: 0)
-        self.mishnaYomi = self.mishnaYomiIndex.lookup(date: Date())
+        self.mishnaYomi = "x"
         updateDateItems()
         logger.debug("il=\(self.il), lang=\(self.lang)")
         doingInit = false
@@ -390,7 +390,8 @@ final class ModelData: ObservableObject {
             self.todayDateItem = makeDateItem(date: now, calendar: cal,
                                               showYear: true, forceParsha: true)
             self.dateItems = makeDateItems(date: now, calendar: cal)
-            self.mishnaYomi = self.mishnaYomiIndex.lookup(date: now)
+            let myomi = self.mishnaYomiIndex.lookup(date: now)
+            self.mishnaYomi = formatMishnaYomi(pair: myomi)
             do {
                 try self.dafYomi = Hebcal.dafYomi(date: now)
             } catch {
@@ -415,6 +416,6 @@ final class ModelData: ObservableObject {
     @Published public var todayDateItem: DateItem?
     @Published public var dateItems = [DateItem]()
 
-    @Published public var mishnaYomi: (Mishna, Mishna)
+    @Published public var mishnaYomi: String
     @Published public var dafYomi: Daf
 }
