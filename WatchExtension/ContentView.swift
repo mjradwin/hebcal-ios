@@ -17,7 +17,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 NavigationLink(destination: HDateList()) {
-                    TodayView(item: modelData.todayDateItem!)
+                    DateItemView(item: modelData.todayDateItem!)
                 }
                 NavigationLink(destination: SettingsView()) {
                     Label("Settings", systemImage: "gear")

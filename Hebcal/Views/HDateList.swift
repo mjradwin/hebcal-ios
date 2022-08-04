@@ -14,7 +14,7 @@ struct HDateList: View {
     // Lay out the view's body.
     var body: some View {
         List($modelData.dateItems) { item in
-            TodayView(item: item.wrappedValue)
+            DateItemView(item: item.wrappedValue)
         }
         .navigationTitle("Calendar")
     }

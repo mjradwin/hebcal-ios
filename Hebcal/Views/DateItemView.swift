@@ -1,6 +1,5 @@
 //
-//  TodayView.swift
-//  HebcalHDate WatchKit Extension
+//  DateItemView.swift
 //
 //  Created by Michael Radwin on 9/30/21.
 //
@@ -9,7 +8,7 @@ import Foundation
 import SwiftUI
 import Hebcal
 
-struct TodayView: View {
+struct DateItemView: View {
     var item: DateItem
     var gregDate: String {
         var s = item.dow + ", " + String(item.gregDay) + " " + item.gregMonth
@@ -70,20 +69,22 @@ struct TodayView: View {
 }
 
 
-struct TodayView_Previews: PreviewProvider {
+struct DateItemView_Previews: PreviewProvider {
     static var item = DateItem(
          id: 1,
          lang: .en,
          weekday: 1, dow: "Wed", gregDay: 28, gregMonth: "Apr",
          gregYear: 2021,
-         hdate: "16 Iyyar 5782", parsha: "Emor",
+         hdate: "16 Iyyar 5782",
+         hd: HDate(absdate: 738292),
+         parsha: "Emor",
          holidays: ["Lag BaOmer"],
          emoji: "😀",
          omer: "Omer: 31st day"
     )
 
     static var previews: some View {
-        TodayView(item: item)
+        DateItemView(item: item)
             .previewLayout(.fixed(width: 300, height: 150))
     }
 }

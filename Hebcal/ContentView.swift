@@ -14,7 +14,6 @@ struct ContentView: View {
     @EnvironmentObject var modelData: ModelData
 
     var body: some View {
-        NavigationView {
             TabView {
                 HDateList()
                     .tabItem { Label("Calendar", systemImage: "calendar") }
@@ -23,8 +22,6 @@ struct ContentView: View {
                 SettingsView()
                     .tabItem { Label("Settings", systemImage: "gear") }
             }
-            .navigationTitle("Hebcal")
-        }
     }
 }
 

@@ -1,6 +1,5 @@
 //
 //  DateItem.swift
-//  HebcalHDate WatchKit Extension
 //
 //  Created by Michael Radwin on 9/5/21.
 //
@@ -17,6 +16,7 @@ struct DateItem: Hashable, Codable, Identifiable {
     var gregMonth: String
     var gregYear: Int
     var hdate: String
+    var hd: HDate
     var parsha: String?
     var holidays: [String]
     var emoji: String?

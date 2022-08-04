@@ -73,11 +73,15 @@ final class ModelData: ObservableObject {
     }
 
     public func getHebDateStringParts(hdate: HDate, showYear: Bool) -> [String] {
+        return self.getHebDateStringParts(hdate: hdate, showYear: showYear, lang: lg)
+    }
+
+    public func getHebDateStringParts(hdate: HDate, showYear: Bool, lang: TranslationLang) -> [String] {
         var parts = [String]()
-        let isHebrew = lg == .he
+        let isHebrew = lang == .he
         let day = isHebrew ? hebnumToString(number: hdate.dd) : String(hdate.dd)
         parts.append(day)
-        parts.append(lookupTranslation(str: hdate.monthName(), lang: lg))
+        parts.append(lookupTranslation(str: hdate.monthName(), lang: lang))
         if showYear {
             let year = isHebrew ? hebnumToString(number: hdate.yy) : String(hdate.yy)
             parts.append(year)
@@ -171,7 +175,7 @@ final class ModelData: ObservableObject {
         self.il = UserDefaults.standard.bool(forKey: "israel")
         self.lang = UserDefaults.standard.integer(forKey: "lang")
         self.dafYomi = Daf(name: "bogus", blatt: 0)
-        self.mishnaYomi = "x"
+        self.myomi = "x"
         updateDateItems()
         logger.debug("il=\(self.il), lang=\(self.lang)")
         doingInit = false
@@ -328,6 +332,7 @@ final class ModelData: ObservableObject {
             gregDay: dateComponents.day!, gregMonth: gregMonth,
             gregYear: gregYear,
             hdate: hdateStr,
+            hd: hdate,
             parsha: parsha,
             holidays: holidays,
             emoji: emoji,
@@ -390,8 +395,8 @@ final class ModelData: ObservableObject {
             self.todayDateItem = makeDateItem(date: now, calendar: cal,
                                               showYear: true, forceParsha: true)
             self.dateItems = makeDateItems(date: now, calendar: cal)
-            let myomi = self.mishnaYomiIndex.lookup(date: now)
-            self.mishnaYomi = formatMishnaYomi(pair: myomi)
+            let myomiPair = self.mishnaYomiIndex.lookup(date: now)
+            self.myomi = formatMishnaYomi(pair: myomiPair)
             do {
                 try self.dafYomi = Hebcal.dafYomi(date: now)
             } catch {
@@ -416,6 +421,6 @@ final class ModelData: ObservableObject {
     @Published public var todayDateItem: DateItem?
     @Published public var dateItems = [DateItem]()
 
-    @Published public var mishnaYomi: String
+    @Published public var myomi: String
     @Published public var dafYomi: Daf
 }

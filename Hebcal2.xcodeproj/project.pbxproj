@@ -31,8 +31,8 @@
 		9D196FE527A1CB0800D90EEC /* Hebcal in Frameworks */ = {isa = PBXBuildFile; productRef = 9D196FE427A1CB0800D90EEC /* Hebcal */; };
 		9D196FE727A1CB2400D90EEC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FE627A1CB2400D90EEC /* ExtensionDelegate.swift */; };
 		9D196FEB27A1CB6100D90EEC /* HDateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FEA27A1CB6100D90EEC /* HDateList.swift */; };
-		9D196FED27A1CBCE00D90EEC /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FE827A1CB4400D90EEC /* TodayView.swift */; };
-		9D196FEE27A1CBD400D90EEC /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FE827A1CB4400D90EEC /* TodayView.swift */; };
+		9D196FED27A1CBCE00D90EEC /* DateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FE827A1CB4400D90EEC /* DateItemView.swift */; };
+		9D196FEE27A1CBD400D90EEC /* DateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FE827A1CB4400D90EEC /* DateItemView.swift */; };
 		9D196FEF27A1CBDC00D90EEC /* HDateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FEA27A1CB6100D90EEC /* HDateList.swift */; };
 		9D196FF127A1CC1900D90EEC /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FF027A1CC1900D90EEC /* ScaledFont.swift */; };
 		9D196FF227A1CC1900D90EEC /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FF027A1CC1900D90EEC /* ScaledFont.swift */; };
@@ -111,7 +111,7 @@
 		9D196FDF27A1CAA900D90EEC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9D196FE127A1CAC200D90EEC /* HDateTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDateTextView.swift; sourceTree = "<group>"; };
 		9D196FE627A1CB2400D90EEC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		9D196FE827A1CB4400D90EEC /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		9D196FE827A1CB4400D90EEC /* DateItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateItemView.swift; sourceTree = "<group>"; };
 		9D196FEA27A1CB6100D90EEC /* HDateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDateList.swift; sourceTree = "<group>"; };
 		9D196FF027A1CC1900D90EEC /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 		9D3D252727A5A5F80082DD36 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 				9D196FF027A1CC1900D90EEC /* ScaledFont.swift */,
 				9D54F61427A89DF400963AF7 /* CalendarView.swift */,
 				9D196FEA27A1CB6100D90EEC /* HDateList.swift */,
-				9D196FE827A1CB4400D90EEC /* TodayView.swift */,
+				9D196FE827A1CB4400D90EEC /* DateItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -428,7 +428,7 @@
 				9D54F61527A89DF400963AF7 /* CalendarView.swift in Sources */,
 				9D196FDA27A1CA0700D90EEC /* ModelData.swift in Sources */,
 				9DD388082842D2AD0086C7E9 /* CalendarSettings.swift in Sources */,
-				9D196FED27A1CBCE00D90EEC /* TodayView.swift in Sources */,
+				9D196FED27A1CBCE00D90EEC /* DateItemView.swift in Sources */,
 				9D196FEB27A1CB6100D90EEC /* HDateList.swift in Sources */,
 				9DD3880C2842D8B60086C7E9 /* DownloadPB.swift in Sources */,
 				9D196FF127A1CC1900D90EEC /* ScaledFont.swift in Sources */,
@@ -444,7 +444,7 @@
 				9D196FE027A1CAA900D90EEC /* SettingsView.swift in Sources */,
 				9D196FBA27A1C17300D90EEC /* ContentView.swift in Sources */,
 				9D196FEF27A1CBDC00D90EEC /* HDateList.swift in Sources */,
-				9D196FEE27A1CBD400D90EEC /* TodayView.swift in Sources */,
+				9D196FEE27A1CBD400D90EEC /* DateItemView.swift in Sources */,
 				9D196FE227A1CAC200D90EEC /* HDateTextView.swift in Sources */,
 				9D196FC027A1C17300D90EEC /* ComplicationController.swift in Sources */,
 				9D54F61627A89DF400963AF7 /* CalendarView.swift in Sources */,

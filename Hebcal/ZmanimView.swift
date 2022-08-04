@@ -9,10 +9,42 @@ import SwiftUI
 
 struct ZmanimView: View {
     @EnvironmentObject var modelData: ModelData
+    var gregDate: String {
+        let item = modelData.todayDateItem!
+        var s = item.dow + ", " + String(item.gregDay) + " " + item.gregMonth
+        if item.gregYear != 0 {
+            s += " " + String(item.gregYear)
+        }
+        return s
+    }
+
     var body: some View {
         VStack {
-            TodayView(item: modelData.todayDateItem!)
+            Text(gregDate)
+                .foregroundColor(.primary)
+                .scaledFont(size: 18, weight: .regular, design: .default)
+            Text(modelData.getHebDateStringParts(hdate: modelData.todayDateItem!.hd, showYear: true, lang: .he).joined(separator: " "))
+                .foregroundColor(.primary)
+                .scaledFont(size: 24, weight: .regular, design: .serif)
+            Text(modelData.todayDateItem!.hdate)
+                .foregroundColor(.primary)
+                .scaledFont(size: 18, weight: .regular, design: .default)
             Text("")
+            if modelData.todayDateItem!.parsha != nil {
+                Text("Torah Portion")
+                    .foregroundColor(.secondary)
+                    .scaledFont(size: 14, weight: .regular, design: .default)
+                HStack {
+                    Image("torah-235339")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 16, height: 16)
+                    Text(modelData.todayDateItem!.parsha!)
+                        .foregroundColor(.primary)
+                        .scaledFont(size: 18, weight: .regular, design: .default)
+                }
+                Text("")
+            }
             Text("Daf Yomi")
                 .foregroundColor(.secondary)
                 .scaledFont(size: 14, weight: .regular, design: .default)
@@ -23,7 +55,7 @@ struct ZmanimView: View {
             Text("Mishna Yomi")
                 .foregroundColor(.secondary)
                 .scaledFont(size: 14, weight: .regular, design: .default)
-            Text(modelData.mishnaYomi)
+            Text(modelData.myomi)
                 .foregroundColor(.primary)
                 .scaledFont(size: 18, weight: .regular, design: .default)
         }
