@@ -38,7 +38,7 @@
 		9D196FF227A1CC1900D90EEC /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D196FF027A1CC1900D90EEC /* ScaledFont.swift */; };
 		9D3D252627A4710D0082DD36 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D989BB727A46D460064B9DB /* Settings.bundle */; };
 		9D3D252827A5A5F80082DD36 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D252727A5A5F80082DD36 /* SettingsView.swift */; };
-		9D3D252A27A5A6100082DD36 /* ZmanimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D252927A5A6100082DD36 /* ZmanimView.swift */; };
+		9D3D252A27A5A6100082DD36 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D252927A5A6100082DD36 /* TodayView.swift */; };
 		9D54F61027A8954600963AF7 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 9D54F60F27A8954600963AF7 /* SwiftProtobuf */; };
 		9D54F61527A89DF400963AF7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54F61427A89DF400963AF7 /* CalendarView.swift */; };
 		9D54F61627A89DF400963AF7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54F61427A89DF400963AF7 /* CalendarView.swift */; };
@@ -115,7 +115,7 @@
 		9D196FEA27A1CB6100D90EEC /* HDateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDateList.swift; sourceTree = "<group>"; };
 		9D196FF027A1CC1900D90EEC /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 		9D3D252727A5A5F80082DD36 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		9D3D252927A5A6100082DD36 /* ZmanimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZmanimView.swift; sourceTree = "<group>"; };
+		9D3D252927A5A6100082DD36 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		9D54F61427A89DF400963AF7 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		9D989BB627A467890064B9DB /* Hebcal-Companion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hebcal-Companion-Info.plist"; sourceTree = "<group>"; };
 		9D989BB727A46D460064B9DB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Hebcal/Settings.bundle; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 				9D196F9E27A1C17200D90EEC /* ContentView.swift */,
 				9D3D252727A5A5F80082DD36 /* SettingsView.swift */,
 				9DD388072842D2AD0086C7E9 /* CalendarSettings.swift */,
-				9D3D252927A5A6100082DD36 /* ZmanimView.swift */,
+				9D3D252927A5A6100082DD36 /* TodayView.swift */,
 				9D196FA027A1C17200D90EEC /* Assets.xcassets */,
 				9D196FA227A1C17200D90EEC /* Preview Content */,
 			);
@@ -422,7 +422,7 @@
 			files = (
 				9D196F9F27A1C17200D90EEC /* ContentView.swift in Sources */,
 				9D3D252827A5A5F80082DD36 /* SettingsView.swift in Sources */,
-				9D3D252A27A5A6100082DD36 /* ZmanimView.swift in Sources */,
+				9D3D252A27A5A6100082DD36 /* TodayView.swift in Sources */,
 				9D196F9D27A1C17200D90EEC /* Hebcal2App.swift in Sources */,
 				9D196FDC27A1CA1900D90EEC /* DateItem.swift in Sources */,
 				9D54F61527A89DF400963AF7 /* CalendarView.swift in Sources */,

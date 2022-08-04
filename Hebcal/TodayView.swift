@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ZmanimView: View {
+struct TodayView: View {
     @EnvironmentObject var modelData: ModelData
     var gregDate: String {
         let item = modelData.todayDateItem!
@@ -19,7 +19,7 @@ struct ZmanimView: View {
     }
 
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             Text(gregDate)
                 .foregroundColor(.primary)
                 .scaledFont(size: 18, weight: .regular, design: .default)
@@ -63,9 +63,9 @@ struct ZmanimView: View {
     }
 }
 
-struct ZmanimView_Previews: PreviewProvider {
+struct TodayView_Previews: PreviewProvider {
     static var previews: some View {
-        ZmanimView()
+        TodayView()
             .environmentObject(ModelData.shared)
     }
 }

@@ -15,10 +15,10 @@ struct ContentView: View {
 
     var body: some View {
             TabView {
+                TodayView()
+                    .tabItem { Label("Today", systemImage: "clock") }
                 HDateList()
                     .tabItem { Label("Calendar", systemImage: "calendar") }
-                ZmanimView()
-                    .tabItem { Label("Today", systemImage: "clock") }
                 SettingsView()
                     .tabItem { Label("Settings", systemImage: "gear") }
             }
