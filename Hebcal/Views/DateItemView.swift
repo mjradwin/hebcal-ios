@@ -61,6 +61,12 @@ struct DateItemView: View {
                             .lineLimit(1)
                     }
                 }
+                if item.dafyomi != nil {
+                    Text(item.dafyomi!)
+                        .foregroundColor(.secondary)
+                        .scaledFont(size: 16, weight: .regular, design: .default)
+                        .lineLimit(1)
+                }
             }
             .minimumScaleFactor(0.6)
             .multilineTextAlignment(isHebrew ? .trailing : .leading)
@@ -80,7 +86,8 @@ struct DateItemView_Previews: PreviewProvider {
          parsha: "Emor",
          holidays: ["Lag BaOmer"],
          emoji: "😀",
-         omer: "Omer: 31st day"
+         omer: "Omer: 31st day",
+         dafyomi: "Pesachim 108"
     )
 
     static var previews: some View {

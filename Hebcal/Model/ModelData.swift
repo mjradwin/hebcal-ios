@@ -42,6 +42,17 @@ final class ModelData: ObservableObject {
         }
     }
 
+    @Published public var dafyomi: Bool {
+        didSet {
+            if !doingInit {
+                logger.debug("dafyomi=\(self.dafyomi)")
+                UserDefaults.standard.set(dafyomi, forKey: "dafyomi")
+                currentDay = -1
+                updateDateItems()
+            }
+        }
+    }
+
     public var lg: TranslationLang {
         TranslationLang(rawValue: self.lang) ?? TranslationLang.en
     }
@@ -136,36 +147,31 @@ final class ModelData: ObservableObject {
     }
 
     private let priortyFlags = HolidayFlags([.EREV, .CHAG, .MINOR_HOLIDAY])
-    public func pickHolidayToDisplay(date: Date) -> HEvent? {
-        let hdate = makeHDate(date: date)
-        return self.pickHolidayToDisplay(hdate: hdate)
-    }
-    public func pickHolidayToDisplay(hdate: HDate) -> HEvent? {
+    public func pickHolidayToDisplay(hdate: HDate, specialShabbat: Bool) -> HEvent? {
         let holidays = self.getHolidaysOnDate(hdate: hdate)
-        if holidays.count == 0 {
-            // if there are no holidays today, see if Shabbat is a special Shabbat
-            let saturdayAbs = dayOnOrBefore(dayOfWeek: DayOfWeek.SAT, absdate: hdate.abs() + 6)
-            let saturday = HDate(absdate: saturdayAbs)
-            let satHolidays = self.getHolidaysOnDate(hdate: saturday)
-            for h in satHolidays {
-                if h.flags.contains(.SPECIAL_SHABBAT) {
-                    return h
-                }
-            }
-            return nil // today isn't a holiday and no special shabbat
-        } else if holidays.count == 1 {
-            return holidays[0]
-        } else {
-            // multiple holidays today, such as "Erev Pesach" and "Ta'anit Bechorot"
-            // so pick the most "important" one to display
+        if holidays.count > 0 {
+            // possibly multiple holidays today, such as "Erev Pesach" and "Ta'anit Bechorot"
+            // if there happens to be an "important" holiday today, grab that first
             if let h = holidays.first(
                 where: { !priortyFlags.intersection($0.flags).isEmpty }) {
                 return h
             } else {
-                // whatever, just show the first holiday today
                 return holidays[0]
             }
         }
+        // there are no holidays today, see if Shabbat is a special Shabbat
+        if !specialShabbat {
+            return nil
+        }
+        let saturdayAbs = dayOnOrBefore(dayOfWeek: DayOfWeek.SAT, absdate: hdate.abs() + 6)
+        let saturday = HDate(absdate: saturdayAbs)
+        let satHolidays = self.getHolidaysOnDate(hdate: saturday)
+        for h in satHolidays {
+            if h.flags.contains(.SPECIAL_SHABBAT) {
+                return h
+            }
+        }
+        return nil // today isn't a holiday and no special shabbat
     }
 
     private let mishnaYomiIndex = MishnaYomiIndex()
@@ -174,7 +180,8 @@ final class ModelData: ObservableObject {
         logger.debug("ModelData init")
         self.il = UserDefaults.standard.bool(forKey: "israel")
         self.lang = UserDefaults.standard.integer(forKey: "lang")
-        self.dafYomi = Daf(name: "bogus", blatt: 0)
+        self.dafyomi = UserDefaults.standard.bool(forKey: "dafyomi")
+        self.daf = Daf(name: "bogus", blatt: 0)
         self.myomi = "x"
         updateDateItems()
         logger.debug("il=\(self.il), lang=\(self.lang)")
@@ -213,6 +220,30 @@ final class ModelData: ObservableObject {
         "דצמ",
     ]
 
+    let holidayAbbrev = [
+        "Rosh Chodesh": "R.Ch.",
+        "Erev Rosh Hashana": "Erev R.H.",
+        "Rosh Hashana": "R.H.",
+        "Rosh Hashana II": "R.H. II",
+        "Rosh Hashana LaBehemot": "R.H. LaBehemot",
+        "Erev Yom Kippur": "Erev Y.K.",
+        "Simchat Torah": "Sim. Torah",
+        "Simchas Torah": "Sim. Torah",
+        "Sukkot VII (Hoshana Raba)": "Hoshana Raba",
+        "Sukkos VII (Hoshana Raba)": "Hoshana Raba",
+        "Shmini Atzeres": "Shmini Atz.",
+        "Shmini Atzeret": "Shmini Atz.",
+        "Tish'a B'Av (observed)": "Tish'a B'Av (obs.)",
+        "Yom Kippur": "Y.K.",
+        "ראש חודש": "ר״ח",
+        "ערב ראש השנה": "ערב ראה״ש",
+        "ראש השנה": "ראה״ש",
+        "ערב יום כפור": "ערב יוה״כ",
+        "יום כפור": "יוה״כ",
+        "ראש השנה למעשר בהמה": "ראה״ש לבהמות",
+        "סוכות ז׳ (הושענא רבה)": "הושענא רבה",
+    ]
+
     var yearCache: [Int: [HEvent]] = [:]
     var sedraCache: [Int: Sedra] = [:]
     
@@ -226,19 +257,32 @@ final class ModelData: ObservableObject {
         return Hebcal.getHolidaysOnDate(events: events, hdate: hdate, il: self.il)
     }
 
-    public func translateHolidayName(ev: HEvent) -> String {
+    public func translateHolidayName(ev: HEvent, abbrev: Bool) -> String {
         if ev.flags.contains(.ROSH_CHODESH) {
-            let rch = lookupTranslation(str: "Rosh Chodesh", lang: lg)
+            var rch = lookupTranslation(str: "Rosh Chodesh", lang: lg)
+            if abbrev && holidayAbbrev[rch] != nil {
+                rch = holidayAbbrev[rch]!
+            }
             let start = ev.desc.index(ev.desc.startIndex, offsetBy: 13)
             let month0 = String(ev.desc[start..<ev.desc.endIndex])
             let month = lookupTranslation(str: month0, lang: lg)
             return rch + " " + month
         } else if ev.desc == "Rosh Hashana" {
-            let holiday = lookupTranslation(str: ev.desc, lang: lg)
+            var holiday = lookupTranslation(str: ev.desc, lang: lg)
+            if abbrev && holidayAbbrev[holiday] != nil {
+                holiday = holidayAbbrev[holiday]!
+            }
             let yearStr = lg == .he ? hebnumToString(number: ev.hdate.yy) : String(ev.hdate.yy)
             return holiday + " " + yearStr
         }
         let holiday = lookupTranslation(str: ev.desc, lang: lg)
+        if abbrev {
+            if holidayAbbrev[holiday] != nil {
+                return holidayAbbrev[holiday]!
+            } else if holiday.hasSuffix(" (CH''M)") || holiday.hasSuffix(" (חוה״מ)") {
+                return String(holiday[..<holiday.index(holiday.endIndex, offsetBy: -8)])
+            }
+        }
         return holiday
     }
 
@@ -315,7 +359,7 @@ final class ModelData: ObservableObject {
         let events = self.getHolidaysOnDate(hdate: hdate)
         var holidays = [String]()
         for ev in events {
-            let holiday = translateHolidayName(ev: ev)
+            let holiday = translateHolidayName(ev: ev, abbrev: false)
             holidays.append(holiday)
         }
         let emoji = pickEmoji(events: events)
@@ -324,6 +368,17 @@ final class ModelData: ObservableObject {
         let yearNow = calendar.dateComponents([.year], from: Date()).year!
         let gregYear0 = dateComponents.year!
         let gregYear = showYear ? gregYear0 : yearNow == gregYear0 ? 0 : gregYear0
+        var dafYomiStr: String?
+        if dafyomi {
+            let daf = try? Hebcal.dafYomi(date: date)
+            if daf != nil {
+                if lg == .he {
+                    dafYomiStr = lookupTranslation(str: daf!.name, lang: lg) + " דף " + hebnumToString(number: daf!.blatt)
+                } else {
+                    dafYomiStr = lookupTranslation(str: daf!.name, lang: lg) + " " + String(daf!.blatt)
+                }
+            }
+        }
         return DateItem(
             id: ((hdate.yy * 10000) + (hdate.mm.rawValue * 100) + hdate.dd),
             lang: lg,
@@ -336,7 +391,8 @@ final class ModelData: ObservableObject {
             parsha: parsha,
             holidays: holidays,
             emoji: emoji,
-            omer: omerStr(hdate: hdate)
+            omer: omerStr(hdate: hdate),
+            dafyomi: dafYomiStr
         )
     }
 
@@ -398,9 +454,9 @@ final class ModelData: ObservableObject {
             let myomiPair = self.mishnaYomiIndex.lookup(date: now)
             self.myomi = formatMishnaYomi(pair: myomiPair)
             do {
-                try self.dafYomi = Hebcal.dafYomi(date: now)
+                try self.daf = Hebcal.dafYomi(date: now)
             } catch {
-                self.dafYomi = Daf(name: "bogus", blatt: 0)
+                self.daf = Daf(name: "bogus", blatt: 0)
             }
         }
     }
@@ -422,5 +478,5 @@ final class ModelData: ObservableObject {
     @Published public var dateItems = [DateItem]()
 
     @Published public var myomi: String
-    @Published public var dafYomi: Daf
+    @Published public var daf: Daf
 }
