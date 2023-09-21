@@ -79,6 +79,13 @@
       "size" : "40x40"
     },
     {
+      "idiom" : "watch",
+      "role" : "appLauncher",
+      "scale" : "2x",
+      "size" : "54x54",
+      "subtype" : "49mm"
+    },
+    {
       "filename" : "80.png",
       "idiom" : "ipad",
       "scale" : "2x",
@@ -101,6 +108,13 @@
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
+    },
+    {
+      "idiom" : "watch",
+      "role" : "quickLook",
+      "scale" : "2x",
+      "size" : "129x129",
+      "subtype" : "49mm"
     },
     {
       "filename" : "1024.png",

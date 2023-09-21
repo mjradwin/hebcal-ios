@@ -277,6 +277,12 @@ final class ModelData: ObservableObject {
         }
         let holiday = lookupTranslation(str: ev.desc, lang: lg)
         if abbrev {
+            if ev.flags.contains(.SPECIAL_SHABBAT) && (lg == .en || lg == .ashkenazi) {
+                if let idx = holiday.firstIndex(of: " ") {
+                    let remainder = String(holiday[idx...])
+                    return "Sh." + remainder
+                }
+            }
             if holidayAbbrev[holiday] != nil {
                 return holidayAbbrev[holiday]!
             } else if holiday.hasSuffix(" (CH''M)") || holiday.hasSuffix(" (חוה״מ)") {
